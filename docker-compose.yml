@@ -1,0 +1,20 @@
+services:
+  backend:
+    build: ./backend
+    container_name: campusgpt-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env.example
+    volumes:
+      - ./backend/storage:/app/storage
+
+  frontend:
+    build: ./frontend
+    container_name: campusgpt-frontend
+    ports:
+      - "4173:4173"
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8000
+    depends_on:
+      - backend

@@ -1,0 +1,17 @@
+[
+  {
+    "query": "When must revaluation requests be submitted?",
+    "expected_document": "exam_policy.txt",
+    "should_refuse": false
+  },
+  {
+    "query": "What are saturday library hours?",
+    "expected_document": "library_rules.md",
+    "should_refuse": false
+  },
+  {
+    "query": "How can I get a passport renewed?",
+    "expected_document": null,
+    "should_refuse": true
+  }
+]

@@ -1,0 +1,73 @@
+.layout {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 1rem;
+  color: #102a43;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid.two {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card {
+  background: #f8fbff;
+  border: 1px solid #d9e2ec;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  margin: 0.5rem 0;
+}
+
+button {
+  background: #334e68;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.35rem 0;
+}
+
+.pill {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  color: #fff;
+}
+
+.pill.grounded {
+  background: #2f855a;
+}
+
+.pill.refused {
+  background: #c53030;
+}
+
+.error {
+  color: #c53030;
+  font-weight: bold;
+}
+
+.empty {
+  color: #627d98;
+}
